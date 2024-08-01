@@ -1,19 +1,34 @@
----Making gui ---
+---Making Gui ---
+MasterPanelGui = gui.get_tab("Master Panel")
+gui.show_message("Master Panel","is loaded")
 
-TeleportMenuGui = gui.get_tab("Teleport Menu Version: 1.0.0")
-gui.show_message("Teleport Menu","is loaded")
------Teleports-----
-	--- GUI---
-	TestMenuTab1 = TestMenuGui:add_tab("Teleports")
-	TestMenuTab1:add_text("Apartments")
+--- Strings ---
+Version = "1.0.1"
 
-	---seperator1---
-	TestMenuTab1:add_separator()
+--- Credits ---
+MasterPanelGui:add_text("--- Credits ---")
+MasterPanelGui:add_separator()
+MasterPanelGui:add_text("Lotux","Buyinggnome36")
+MasterPanelGui:add_text("Script Version:" .. Version)
 
 
-	-----Apartment teleportsTeleports
-	TestMenuTab1:add_button("TP to Apartment", function()
-		PED.SET_PED_COORDS_KEEP_VEHICLE(PLAYER.PLAYER_PED_ID(), -796.611, 307.099, 85.700)
-	end)
-	
------teleports end----------
+--- Tabs ---
+TeleportTab1 = MasterPanelGui:add_tab("Teleports1")
+TeleportTab2 = MasterPanelGui:add_tab("Teleports2")
+TeleportTab3 = MasterPanelGui:add_tab("Teleports3")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
